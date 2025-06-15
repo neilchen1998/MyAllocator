@@ -6,8 +6,8 @@ FetchContent_MakeAvailable(catch)
 
 add_executable(myallocatortestlib myallocatortestlib.cc)
 
-target_compile_features(myallocatortestlib PRIVATE cxx_std_20)
+target_compile_features(myallocatortestlib PRIVATE cxx_std_17)
 
-target_link_libraries(myallocatortestlib PRIVATE Catch2::Catch2 math_library)
+target_link_libraries(myallocatortestlib PRIVATE Catch2::Catch2 my_allocator_library)
 
 add_test(NAME myallocatortestlibtest COMMAND myallocatortestlib)
