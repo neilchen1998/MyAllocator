@@ -1,0 +1,5 @@
+# build folder generated from CMake
+build/*
+
+# vscode
+.vscode/*
